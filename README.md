@@ -1,4 +1,4 @@
-# simple_shell
+# Simple Shell
 ## Writing a simple UNIX command interpreter.
 
 ## Learning Objectives
@@ -33,7 +33,7 @@
     * Write a README with the description of your project
     * You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker
    ### GitHub
-*There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator. *
+* There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator. *
 
 ### More Info
 * Output
