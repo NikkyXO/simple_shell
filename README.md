@@ -85,7 +85,7 @@
       ($)
       ($) exit
       $
-      
+
 * But also in non-interactive mode:
 
       $ echo "/bin/ls" | ./hsh

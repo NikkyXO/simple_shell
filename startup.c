@@ -40,7 +40,7 @@ void read_startup_file(info_t *info)
 
 	if (!_getenv(info, "HOME="))
 		return;
-	buf = malloc(_strlen(_getenv(info, "HOME=")) +
+	buf = malloc(_strlen(_getenv(info, "HOME="))
 		_strlen(STARTUP_FILE) + 2);
 	if (!buf)
 		return;

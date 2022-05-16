@@ -20,7 +20,6 @@ int main(int ac, char **av)
 			exit(info->err_num);
 		}
 	}
-
 	read_startup_file(info);
 	hsh(info, av);
 	return (EXIT_SUCCESS);

@@ -202,8 +202,8 @@ char *_strchr(char *, char);
 char *_strchrlast(char *s, char c);
 
 /* string_functions4.c */
-char **strtow(char *, char *);
-char **strtow2(char *, char);
+char **_strtok1(char *, char *);
+char **_strtok2(char *, char);
 
 /* memory_functions */
 char *_memcpy(char *dest, char *src, unsigned int n);
