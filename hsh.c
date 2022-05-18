@@ -26,8 +26,7 @@ int hsh(info_t *info, char **av)
 				builtin_ret = find_builtin(info);
 				if (builtin_ret == -1)
 					find_cmd(info);
-			}
-			else
+			} else
 				builtin_ret = -3;
 		}
 		else if (interactive(info))
@@ -60,15 +59,16 @@ int find_builtin(info_t *info)
 {
 	int i, built_in_ret = -1;
 	builtin_table builtintbl[] = {
-	    {"exit", _myexit},
-	    {"env", _myenv},
-	    {"help", _myhelp},
-	    {"history", _myhistory},
-	    {"setenv", _mysetenv},
-	    {"unsetenv", _myunsetenv},
-	    {"cd", _mycd},
-	    {"alias", _myalias},
-	    {NULL, NULL}};
+		{"exit", _myexit},
+		{"env", _myenv},
+		{"help", _myhelp},
+		{"history", _myhistory},
+		{"setenv", _mysetenv},
+		{"unsetenv", _myunsetenv},
+		{"cd", _mycd},
+		{"alias", _myalias},
+		{NULL, NULL}
+	};
 
 	if (info->heredoc)
 		return (0);
@@ -113,7 +113,8 @@ void find_cmd(info_t *info)
 	}
 	else
 	{
-		if ((interactive(info) || _getenv(info, "PATH=") || info->argv[0][0] == '/') && is_cmd(info, info->argv[0]))
+		if ((interactive(info) || _getenv(info, "PATH=")
+			|| info->argv[0][0] == '/') && is_cmd(info, info->argv[0]))
 			fork_cmd(info);
 		else if (*(info->arg) != '\n')
 		{
@@ -170,6 +171,7 @@ void fork_cmd(info_t *info)
 		}
 	}
 }
+
 
 /**
  * handle_redirects - handles all left/right redirect syscalls
