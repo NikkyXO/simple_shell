@@ -43,7 +43,7 @@ int set_info(info_t *info, char **av)
 				info->heredoc_cmd = _strdup(info->arg);
 		}
 		handle_redirects(info);
-		info->argv = _strtok1(info->arg, " \t");
+		info->argv = strtow(info->arg, " \t");
 		if (!info->argv)
 		{
 
